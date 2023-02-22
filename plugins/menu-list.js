@@ -103,75 +103,18 @@ let handler = async (m, { conn, command, groupMetadata, usedPrefix: _p, __dirnam
      let arrayMenu = ['all', 'anime', 'update', 'maker', 'berita', 'openaimenu', 'storemenu','jadian','edukasi', 'news', 'random', 'logo', 'menbalas', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database','quran', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
      if (!arrayMenu.includes(teks)) teks = '404'
      if (teks == 'all') tags = {
-     'main': 'Main', 
-     'game': 'Game',
-     'rpg': 'RPG Games',
-     'xp': 'Exp & Limit',
      'sticker': 'Sticker',
-     'kerang': 'Kerang Ajaib',
-     'quotes': 'Quotes',
-     'fun': 'Fun',
-     'anime': 'Anime',
      'admin': 'Admin',
      'group': 'Group',
-     'vote': 'Voting',
-     'absen': 'Absen',
-     'premium': 'Premium',
-     'anonymous': 'Anonymous Chat',
-     'internet': 'Internet',
-     'downloader': 'Downloader',
-     'tools': 'Tools',
-     'nulis': 'MagerNulis & Logo',
-     'audio': 'Audio',
      'openaimenu': 'Open AI Menu',
-     'storemenu': 'Store Menu',
-     'logo': 'Logo Menu',
-     'maker': 'Maker',
-     'berita': 'Berita',
-     'database': 'Database',
-     'quran': 'Al Qur\'an',
      'owner': 'Owner',
      'host': 'Host',
-     'jadian': 'Jadian Menu',
-     'advanced': 'Advanced',
      'info': 'Info',
      '': 'No Category',
    }
-     if (teks == 'game') tags = {
-       'game': 'Game'
-     }
-     if (teks == 'anime') tags = {
-       'anime': 'Anime'
-     }
-     if (teks == 'nsfw') tags = {
-       'nsfw': 'Nsfw'
-     }
-     if (teks == 'rpg') tags = {
-       'rpg': 'Rpg'
-     }
-     if (teks == 'edukasi') tags = {
-       'edukasi': 'Edukasi'
-     }
-     if (teks == 'news') tags = {
-       'news': 'News'
-     }
-     if (teks == 'random') tags = {
-       'random': 'Random'
-     }
-     if (teks == 'xp') tags = {
-       'xp': 'Exp & Limit'
      }
      if (teks == 'stiker') tags = {
        'sticker': 'Stiker'
-     }
-     if (teks == 'kerangajaib') tags = {
-       'kerang': 'Kerang Ajaib'
-     }
-     if (teks == 'quotes') tags = {
-       'quotes': 'Quotes'
-     }
-     if (teks == 'berita') tags = {
-       'berita': 'Berita'
      }
      if (teks == 'admin') tags = {
        'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
@@ -179,25 +122,6 @@ let handler = async (m, { conn, command, groupMetadata, usedPrefix: _p, __dirnam
      }
      if (teks == 'group') tags = {
        'group': 'Group'
-     }
-     if (teks == 'premium') tags = {
-       'premium': 'Premium'
-     }
-     if (teks == 'internet') tags = {
-       'internet': 'Internet'
-     }
-     if (teks == 'anonymous') tags = {
-       'anonymous': 'Anonymous Chat'
-     }
-     if (teks == 'nulis') tags = {
-       'nulis': 'Nulis',
-       'maker': 'Maker'
-     }
-     if (teks == 'database') tags = {
-       'database': 'Database'
-     }
-     if (teks == 'vote') tags = {
-       'vote': 'Voting',
      }
      if (teks == 'openaimenu') tags = {
       'openaimenu': 'Open AI Menu'
@@ -230,39 +154,12 @@ let handler = async (m, { conn, command, groupMetadata, usedPrefix: _p, __dirnam
 "💌 OWNER BOT",
 "⏰ RUNTIME BOT",
 "📔 SCRIPT BOT",
-"🔖 SEWA",
-"🌟 BUY PREMIUM",
 "💹 DONASI",
-"Menfess Balas",
 "All",
-"Rpg",
 "OpenAI Menu",
-"Store Menu (Owner)",
-"Voting",
-"Exp",
-"Game",
-"Fun",
-"Jadian",
-"Kerang",
-"Quotes",
-"Anime",
-"Nsfw",
-"Premium",
-"Anonymous Chats",
-"Al-Quran",
-"Internet",
-"Berita",
-"Downloaders",
 "Stikers",
-"Logo",
-"Nulis",
-"Audio",
-"Sound Menu",
-"Sound Kane Menu",
 "Group",
 "Admin",
-"Database",
-"Tools",
 "Info",
 "Owner",
 "No Category"]
@@ -271,39 +168,12 @@ let idop = [".speed",
 ".owner",
 ".runtime",
 ".sc",
-".sewa",
-".premium",
 ".donasi",
-".? menbalas",
 ".? all",
-".? rpg",
 ".? openaimenu",
-".? storemenu",
-".? vote",
-".? xp",
-".? game",
-".? fun",
-".? jadian",
-".? kerangajaib",
-".? quotes",
-".? anime",
-".? nsfw",
-".? premium",
-".? anonymous",
-".? quran",
-".? internet",
-".? berita",
-".? downloader",
 ".? stiker",
-".? logo",
-".? nulis",
-".? audio",
-".soundmenu",
-".soundkanemenu",
 ".? group",
 ".? admin",
-".? database",
-".? tools",
 ".? info",
 ".? owner",
 ".? nocategory"]
@@ -385,17 +255,12 @@ let tek = `✧────···[ Dashboard ]···────✧
      │
      ├━━━━━━━━━━━━━━━━┈─⋆
      │
-     │ ▸ *Sumber :* YouTube WH-MODS-DEV
      │ ▸ *ᴀᴜᴛʜᴏʀ :* ${nameown}
      ┴ ▸ *ᴏᴡɴᴇʀ :* ${nameown}
      ✧
      ┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
      │ ʙᴇʀɪ ᴊᴇᴅᴀ ʏᴀʜ ᴋᴀᴋ ^ω^
      │
-     ├━━━━━━━━━━━━━━━━┈─⋆
-     │${emot} *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
-     │${emot} *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
-     │${emot} ${clockStringP(usrs.premiumTime - new Date())}` : ''}
      ╰━━━━━━━━━━━━━━━━┈─◂`
 // LIST MESSAGE NEW SUPPORT BASE WHATSAPP NEW
 // full no enc 47k minat wa.me/6282127487538
