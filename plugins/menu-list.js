@@ -193,48 +193,15 @@ let handler = async (m, { conn, command, groupMetadata, usedPrefix: _p, __dirnam
        'nulis': 'Nulis',
        'maker': 'Maker'
      }
-     if (teks == 'downloader') tags = {
-       'downloader': 'Downloader'
-     }
-     if (teks == 'tools') tags = {
-       'tools': 'Tools'
-     }
-   if (teks == 'menbalas') tags = {
-       'menbalas': 'Menfess'
-     }
-     if (teks == 'fun') tags = {
-       'fun': 'Fun'
-     }
      if (teks == 'database') tags = {
        'database': 'Database'
      }
      if (teks == 'vote') tags = {
        'vote': 'Voting',
      }
-     if (teks == 'logo') tags = {
-       'logo': 'Logo Menu',
-     }
-     if (teks == 'absen') tags = {
-       'absen': 'Absen'
-     }
-     if (teks == 'quran') tags = {
-       'quran': 'Al-Qur\'an',
-       'islamic': 'Islamic'
-     }
-     if (teks == 'audio') tags = {
-       'audio': 'Audio'
-     }
      if (teks == 'openaimenu') tags = {
       'openaimenu': 'Open AI Menu'
-    }
-    if (teks == 'storemenu') tags = {
-      'storemenu': 'Store Menu'
-    }
-     if (teks == 'jadibot') tags = {
-       'jadibot': 'Jadi Bot'
-     }
-     if (teks == 'jadian') tags = {
-      'jadian': 'Jadian Menu'
+  
     }
      if (teks == 'info') tags = {
        'info': 'Info'
@@ -243,9 +210,6 @@ let handler = async (m, { conn, command, groupMetadata, usedPrefix: _p, __dirnam
        'owner': 'Owner',
        'host': 'Host',
        'advanced': 'Advanced'
-     }
-    if (teks == 'nsfw') tags = {
-       'nsfw': 'Nsfw'
      }
      if (teks == 'nocategory') tags = {
        'nocategory': 'No Category'
